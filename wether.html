@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Async Weather Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌤 Async Weather Tracker</h1>
+</header>
+
+<div class="main-container">
+
+<div class="card">
+<h3>Search City</h3>
+
+<input type="text" id="cityInput" list="cities" placeholder="Enter city name">
+
+<datalist id="cities">
+<option value="Delhi">
+<option value="Mumbai">
+<option value="Indore">
+<option value="Bhopal">
+<option value="Bangalore">
+<option value="Chennai">
+<option value="Hyderabad">
+<option value="Kolkata">
+<option value="Pune">
+<option value="Jaipur"> 
+
+
+</datalist>
+
+<button id="searchBtn">Search</button>
+
+<h4>Search History</h4>
+<div id="history"></div>
+</div>
+
+
+<div class="card">
+<h3>Weather Info</h3>
+
+<p><b>City:</b> <span id="city"></span></p>
+<p><b>Temp:</b> <span id="temp"></span></p>
+<p><b>Weather:</b> <span id="weather"></span></p>
+<p><b>Humidity:</b> <span id="humidity"></span></p>
+<p><b>Wind:</b> <span id="wind"></span></p>
+
+</div>
+
+</div>
+
+<div class="console-box">
+<h3>Console – Event Loop</h3>
+<div id="consoleOutput"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
